@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Vim
+*.swp
+*.swo
+
+# Yarn
+yarn.lock
