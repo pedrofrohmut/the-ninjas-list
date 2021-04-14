@@ -6,7 +6,8 @@ const StyledContainer = styled.div`
   flex-direction: column;
 
   .content {
-    max-width: 960px;
+    max-width: 95%;
+    width: 960px;
     margin: 0 auto;
   }
 `

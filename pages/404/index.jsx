@@ -1,7 +1,13 @@
+import { useEffect } from "react"
+import { useRouter } from "next/router"
 import Link from "next/link"
-import styled from "styled-components"
+
+import { handleRedirect } from "./functions"
+import StyledContainer from "./styles"
 
 export default function NotFound() {
+  const router = useRouter()
+  useEffect(() => handleRedirect(router), [])
   return (
     <StyledContainer>
       <h1>404 - Oooops...</h1>
@@ -15,17 +21,3 @@ export default function NotFound() {
     </StyledContainer>
   )
 }
-
-const StyledContainer = styled.div`
-  text-align: center;
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  a {
-    margin-left: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-  }
-`

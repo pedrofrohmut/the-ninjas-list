@@ -36,8 +36,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: var(--grey-2);
-  background-color: var(--grey2);
+  color: var(--grey3);
+  background-color: var(--grey-1);
   font-family: "Nunito";
 }
 

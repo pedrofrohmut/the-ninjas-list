@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import styled from "styled-components"
 
 export default function Navbar() {
@@ -7,9 +8,7 @@ export default function Navbar() {
       <nav>
         <div className="logo">
           <Link href="/">
-            <a>
-              <h1>Ninja List</h1>
-            </a>
+            <Image className="logo-image" src="/logo.png" height="70" width="116" />
           </Link>
         </div>
         <div className="page-links">
@@ -29,16 +28,13 @@ export default function Navbar() {
 }
 
 const StyledContainer = styled.div`
-  background-color: var(--grey4);
+  background-color: var(--grey1);
 
   .logo {
     margin-left: 1rem;
     margin-right: 3rem;
     font-size: 1.4rem;
-
-    h1 {
-      color: var(--grey-2);
-    }
+    padding-top: 4px;
   }
 
   nav {
@@ -50,9 +46,18 @@ const StyledContainer = styled.div`
 
   .page-links {
     a {
-      font-size: 1.1rem;
       margin-right: 1.2rem;
-      color: var(--grey-2);
+      color: var(--grey4);
+      font-weight: 700;
+      font-size: 1.2rem;
     }
   }
+`
+
+const Logo = styled.div`
+  
+`
+
+const PageLinks = styled.div`
+  
 `
